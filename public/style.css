@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height: 100vh
+}
+
+.register, .login {
+    width: 40vw;
+    height:50vh;
+    background-color: lightgrey;
+    padding:20px
+}
+
+.registerForm, .loginForm {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15%
+}
+
+.registerFormItem, .loginFormItem {
+    height:20%;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.registerFormItem > div, .loginFormItem > div {
+    width: 100%;
+    height:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.registerFormItem > div > input, .loginFormItem > div > input{
+    width: 50%;
+    height:50%;
+    outline: none;
+}
+
+.registerForm > button, .loginForm > button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: blue;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px
+}
+
+.error {
+    color: red
+}
+
+.flash-message {
+    color: green
+}
+
+.auth {
+    display: flex;
+    gap:50px
+}
+
+.login-fail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red
+}
